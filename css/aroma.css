@@ -649,23 +649,23 @@ header .btn:hover{
         margin-bottom: 0.1rem;
     }
     .trending-section .trending-title::after {
-        left: 46%;
+        left: 48%;
         width: 15rem;
     }
     .swiper-section .swiper-title::after {
-        left: 25%;
+        left: 26%;
         width: 13rem;
     }
     .swipe .swiper-left{
-        left: 4%;
+        left: 2%;
     
     }
     .swipe .swiper-right{
-        right: 4%;
+        right: 2%;
     }
 
     .latest-section .latest-title::after {
-        left: 34%;
+        left: 35%;
         width: 10rem;
     }
     .subscribe .subscribe-container{
@@ -673,6 +673,9 @@ header .btn:hover{
     }
     .latest-section{
         margin: 6% 15% 45% 15%;
+    }
+    .subscribe .subscribe-container input{
+        padding: 1rem 5rem 1rem 2rem;
     }
     .footer {
         margin-top: 24%
