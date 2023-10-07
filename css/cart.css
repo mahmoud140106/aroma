@@ -146,241 +146,119 @@ header .btn:hover{
 }
 
 /* end home */
-/* start shop-category */
-/* start left */
-.shop-category {
-    margin: auto;
-    width: 80%;
-    margin-top: 4%;
-}
-.shop-category input,label,select{
-    cursor: pointer;
-}
-.left-section{
-    float: left;
-    background: #fff;
-    width: 25%;
-    margin-right: 3%;
-}
-.left-section .browse{
-    background: rgb(241,246,247);
-}
-.left-section .browse h3{
-    color: #fff;
-    background: var(--hover);
-    padding: 4% 4% 4% 10%;
-}
-.left-section .browse .browse-container {
-    padding:4% 0% 4% 10%;
-}
-.left-section .browse .browse-container .box{
-    padding: 4% 0% 4% 0%;
-    color: rgb(128,142,156);
-}
-#price{
-    width: 80%;
-    accent-color: var(--hover);
-}
-.left-section .filters{
-    margin-top: 12%;
-    background: rgb(241,246,247);
-}
-.left-section .filters h3{
-    color: #fff;
-    background: var(--hover);
-    padding: 4% 4% 4% 10%;
-}
-.left-section .filters .filters-container {
-    padding:4% 0% 4% 10%;
-}
 
-.left-section .filters .filters-container .box{
-    padding: 4% 0% 4% 0%;
-    color: rgb(128,142,156);
-}
-.left-section .filters .box h4{
-    color: #000;
-}
-.left-section .filters .break{
-    height: 1px;
-    background-color: rgba(168, 175, 179, 0.408);
-}
-/* end left */
-/* start right */
-.right-section .sort{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.table-container{
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
     align-items: center;
-    background-color: rgb(241,246,247);
-    padding: 1% ;
-}
-.right-section .sort .default ,.show,.sort-searchBar {
-    color: rgb(128,142,156);
-    background-color: #fff;
-    border: 0;
-    height:4rem;
-    width: 18rem;
-    margin-left: 1rem;
-    padding: 2% 3% 2% 3%;
-
-}
-
-/* end right */
-/* start trending */
-.trending-container{
+    text-align: center;
     display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-
 }
-.trending-container .trending{
-    flex: 1 1 22rem;
-    height: 100%;
-    width: 100%;
-}
-.trending-container .trending img{
-    height: 100%;
-    width: 100%;
-    margin-top: 10%;
-}
-.trending-container .trending p{
-    color: rgb(128,142,156);
-    text-align: center;
-}
-.trending-container .trending h3{
-    text-align: center;
-    font-size: 18px;
-}
-/* end trending */
-/* end shop-category */
-/* start coffee  */
-.coffee-section {
-    margin: auto;
-    width: 80%;
-    margin-top: 6%;
-    margin-bottom: 15%;
-}
-.coffee-section h4{
-    color: rgb(168,175,179);
-    font-size: 12px;
-}
-.coffee-section .coffee-title{
-    font-size: 30px;
-    position: relative;
-}
-.coffee-section .coffee-title::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 5%;
-    width: 10.5rem;
-    height: 2px;
-    background-color: var(--hover);
-}
-.coffee-box{
+.table-container .pic{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: auto;
-    margin-top: 4%;
-    
-}
-.coffee-container{
-    flex: 1 1 20rem;
-    display: flex;
-    gap: 1rem;
     flex-wrap: nowrap;
-    flex-direction: column;
-    border: 1px solid rgba(168, 175, 179, 0.212);
-}
-.coffee-container .coffee{
-    flex: 1 1 2rem;
-    margin: 5% 10% 5% 10%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-.coffee-container .coffee .pic{
-    height: 70px;
-    width: 70px;
-}
-.coffee-container .coffee img{
-    height: 100%;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
     width: 100%;
-    object-fit: contain;
 }
-.coffee-container .coffee .content{
-    width: max-content;
+.table-container .pic img{
+    width: 10%;
+    height: 30%;
+}
+.table-container .pic p{
+    color: rgb(128,142,156);
+}
+.table-container table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-container table tr:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.table-container table td:first-child{
     text-align: left;
-    align-items: center;
+}
+.table-container table td:last-child{
+    text-align: right;
+}
+.table-container table td{
+    padding: 1% 2% 1% 2%;
     margin: auto;
-    margin-left: 5%;
+    width: min-content;
 }
-.coffee-container .coffee p{
-    color: rgb(128,142,156);
-    font-size: 14px;
+.table-container table tr{
+    border-bottom: 1px solid rgba(128, 142, 156, 0.442);
 }
-.coffee-container .coffee h3{
-    font-size: 14px;
+.table-container table tr:last-child{
+    border-bottom: 0px;
 }
-.coffee-container .coffee h3:hover{
+.table-container table .update{
+    width: 50%;
+}
+.table-container table .update #coupon{
+    padding: 1.5% 2% 1.5% 2%;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+    border: 1px solid rgba(128, 142, 156, 0.407);
+    margin-right: 1%;
+}
+.table-container table .hover{
+    background-color: rgb(241,246,247);
+    color: #000;
+    border: 1px solid rgb(241,246,247);
+
+}
+.table-container table .hover:hover{
+    border: 1px solid var(--hover);
     color: var(--hover);
-    cursor: pointer;
+}
+.shipping .sh-title {
+    align-items: center;
+    margin-left: 18%;
+    float: left;
+}
+.shipping .shipping-container{
+    text-align: right;
+}
+.shipping .shipping-container .box .sh-box{
+    margin: 2rem 0rem 2rem 0rem ;
+    color: rgb(128,142,156);
+}
+.shipping .shipping-container .box h6{
+    font-size: 15px;
+    color: #000 !important;
 }
 
-/* end coffee  */
-/* start subscribe */
-.subscribe{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-flow: column;
-    position: relative;    
+.shipping .shipping-container .box .input-box{
+    float: right;
 }
-.subscribe .subscribe-container{
-    flex: 1 1 25rem;
-    position: absolute;
-    width: 70%;
-    height: 280px;
-    padding: 4%;
-    background-color: #fff;
-    box-shadow: 0 1rem 2rem rgba(56, 74, 235, 0.351);
-    border-radius:0.5rem ;
-    z-index: 10;
+.shipping .shipping-container .box .shipping-select{
+    width: 30rem;
+    margin: 2rem 0rem 2rem 0rem ;
+    background-color: rgb(241,246,247);
+    color: rgb(128,142,156);
+    padding: 4% 8% 4% 8%;
+    border: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: block;
 }
-.subscribe .subscribe-container input{
-    padding: 1rem 10rem 1rem 2rem;
-    margin: 1rem;
-    border: 1px solid rgb(168,175,179);
-    border-radius: 5rem;
-    -webkit-border-radius: 5rem;
-    -moz-border-radius: 5rem;
-    -ms-border-radius: 5rem;
-    -o-border-radius: 5rem;
-}
-.subscribe .subscribe-container .content{
-    text-align: center;
-    margin: 1rem;
-}
-.subscribe .subscribe-container .content h3{
-    font-size: 25px;
-    text-transform: uppercase;
-}
-.subscribe .subscribe-container .content p{
-    color: rgb(168,175,179);
-    font-size: 13px;
-}
-/* end subscribe */
 
 /* start footer */
 .footer {
     position: relative;
     top: 0;
     background:rgb(0,35,71);
-    padding-top: 3%;
     margin-top: 3%
 }
 
@@ -624,6 +502,41 @@ header .btn:hover{
         left: 19%;
         width: 15rem;
     }
+
+
+
+    .table-container{
+        width: 90%;
+        font-size: 10px;
+    }
+    .table-container .pic img{
+        width: 40px;
+        height: 45px;
+    }
+    .table-container .pic p{
+        font-size: 5px;
+    }
+    .table-container table td{
+        padding: 1%;
+    }
+    .table-container table .hover{
+        margin:1rem 0rem 1rem 0rem ;
+    }
+    .table-container table .update{
+        width: 10%;
+        height: min-content;
+    }
+    .table-container table .update #coupon{
+        margin-right: 0%;
+        float: left;
+    }
+    .shipping .sh-title {
+        margin-left: 22%;
+    }
+    .footer {
+        margin-top: 10%
+    }
+
 
 }
 @media (max-width: 450px) {
