@@ -121,112 +121,113 @@ header .btn:hover{
     border:.1rem solid rgba(0, 0, 0, .3);
 }
 /* start home */
+
 .home {
+    background-color: rgb(241,246,247);
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
-    position: relative;
-    
 }
-.home .left{
-    background:var(--hover);
-    height: 100%;
-    width: 31%;
-    position: absolute;
-    left:0;
-    z-index: 0;
-}
-.home .right{
-    background:rgb(241,246,247);
-    height: 100%;
-    width: 69%;
-    position: absolute;
-    right:0;
-    z-index: 0;
+
+.home div {
+    align-items: center;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
-.home .right .content{
-    width: 50%;
-    text-align: left;
+
+.home div h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 10px;
 }
-.home .right .content h4{
+
+.home div p {
     color: rgb(128,142,156);
-    font-size: 25px;
 }
-.home .right .content h3{
-    color: #000;
-    width: 65%;
-    font-size: 35px;
-    font-weight: bolder;
-    line-height: 99%;
-    margin-top: 1rem;
-    text-transform: uppercase;
-}
-.home .right .content p{
-    color: rgb(168,175,179);
-    font-size: 15px;
-    margin: 2rem 0rem 4rem 0rem
-}
-.home .pic{
-    height: 600px;
-    width: 450px;
-    /* position: absolute; */
-    /* right:25%; */
-    /* left: 10%;
-    top: 8%; */
-    margin:6rem 70rem 0rem 0rem;
-    z-index: 1;
-}
-.home .pic img{
-    height: 100%;
-    width: 100%;
-}
+
 /* end home */
-/* start slide */
-.slide-container{
-    display: flex;
-    gap: 1rem;
-    margin: 1rem 0rem 1rem 0rem;
-    height: 50vh;
-}
-.slide-container .slide{
-    flex: 1 1 10rem;
-    
-}
-.slide-container .slide img{
-    height: 100%;
-    width: 100%;
-}
-/* end slide */
-/* start trending */
-.trending-section{
-    /* margin: 6% 15% 6% 15%; */
+/* start shop-category */
+/* start left */
+.shop-category {
     margin: auto;
     width: 80%;
-    margin-top: 6%;
-    margin-bottom:6%;
+    margin-top: 4%;
 }
-.trending-section h4{
-    color: rgb(168,175,179);
-    font-size: 12px;
+.shop-category input,label,select{
+    cursor: pointer;
 }
-.trending-section .trending-title{
-    font-size: 30px;
-    position: relative;
+.left-section{
+    float: left;
+    background: #fff;
+    width: 25%;
+    margin-right: 3%;
 }
-.trending-section .trending-title::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 11%;
-    width: 10.5rem;
-    height: 2px;
-    background-color: var(--hover);
+.left-section .browse{
+    background: rgb(241,246,247);
 }
+.left-section .browse h3{
+    color: #fff;
+    background: var(--hover);
+    padding: 4% 4% 4% 10%;
+}
+.left-section .browse .browse-container {
+    padding:4% 0% 4% 10%;
+}
+.left-section .browse .browse-container .box{
+    padding: 4% 0% 4% 0%;
+    color: rgb(128,142,156);
+}
+#price{
+    width: 80%;
+    accent-color: var(--hover);
+}
+.left-section .filters{
+    margin-top: 12%;
+    background: rgb(241,246,247);
+}
+.left-section .filters h3{
+    color: #fff;
+    background: var(--hover);
+    padding: 4% 4% 4% 10%;
+}
+.left-section .filters .filters-container {
+    padding:4% 0% 4% 10%;
+}
+
+.left-section .filters .filters-container .box{
+    padding: 4% 0% 4% 0%;
+    color: rgb(128,142,156);
+}
+.left-section .filters .box h4{
+    color: #000;
+}
+.left-section .filters .break{
+    height: 1px;
+    background-color: rgba(168, 175, 179, 0.408);
+}
+/* end left */
+/* start right */
+.right-section .sort{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241,246,247);
+    padding: 1% ;
+}
+.right-section .sort .default ,.show,.sort-searchBar {
+    color: rgb(128,142,156);
+    background-color: #fff;
+    border: 0;
+    height:4rem;
+    width: 18rem;
+    margin-left: 1rem;
+    padding: 2% 3% 2% 3%;
+
+}
+
+/* end right */
+/* start trending */
 .trending-container{
     display: flex;
     gap: 2rem;
@@ -234,9 +235,9 @@ header .btn:hover{
 
 }
 .trending-container .trending{
-    flex: 1 1 24rem;
-    height: 70%;
-    width: 50%;
+    flex: 1 1 22rem;
+    height: 100%;
+    width: 100%;
 }
 .trending-container .trending img{
     height: 100%;
@@ -251,195 +252,81 @@ header .btn:hover{
     text-align: center;
     font-size: 18px;
 }
-
 /* end trending */
-/* start sale */
-.sale-container {
-    position: relative;
-}
-.sale-container img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.sale-container .sale-content{
-    width: 20%;
-    text-align: center;
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    padding: 1rem;    
-}
-.sale-container .sale-content h3{
-    color: #000;
-    font-size: 35px;
-    font-weight: bolder;
-    margin-top: 1rem;
-}
-.sale-container .sale-content h4{
-    font-size: 20px;
-    margin-top: 2rem;
-}
-.sale-container .sale-content p{
-    color: rgb(128,142,156);
-    font-size: 15px;
-    margin-bottom: 4rem;
-}
-/* end sale */
-/* start swiper */
-.swipe{
-    position: relative;
-}
-.swiper-section{
-    /* margin: 6% 15% 6% 15%; */
-    margin: auto;
-    width: 80%;
-    margin-top: 6%;
-}
-.swiper-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.swipe .swiper-left{
-    position: absolute;
-    top: 50%;
-    /* left: -5%; */
-    left: 8%;
-    color: var(--hover);
-    background-color: rgba(168, 175, 179, 0.43);
-    border: 0px;
-    border-radius: 4px;
-    padding: 1px 6px 1px 6px;
-    font-size: 20px;
-    cursor: pointer;
-
-}
-.swipe .swiper-right{
-    position: absolute;
-    top: 50%;
-    /* right: -5%; */
-    right: 8%;
-    color: var(--hover);
-    background-color: rgba(168, 175, 179, 0.43);
-    border: 0px;
-    border-radius: 4px;
-    padding: 1px 6px 1px 6px;
-    font-size: 20px;
-    cursor: pointer;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-.swiper-section h4{
-    color: rgb(168,175,179);
-    font-size: 12px;
-}
-.swiper-section .swiper-title{
-    font-size: 30px;
-    position: relative;
-
-}
-.swiper-section .swiper-title::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 6%;
-    width: 9rem;
-    height: 2px;
-    background-color: var(--hover);
-}
-.swiper-container{
-    display: flex;
-    gap: 2rem;
-    flex-wrap: nowrap;
-}
-.swiper-container .swiper{
-    flex: 1 1 24rem;
-    height: 70%;
-    width: 50%;
-}
-.swiper-container .swiper img{
-    height: 100%;
-    width: 100%;
-    margin-top: 10%;
-}
-.swiper-container .swiper p{
-    color: rgb(128,142,156);
-    text-align: center;
-}
-.swiper-container .swiper h3{
-    text-align: center;
-    font-size: 18px;
-}
-
-/* end swiper */
-/* start latest */
-.latest-section{
-    position: relative;
-    /* margin: 6% 15% 14% 15%; */
+/* end shop-category */
+/* start coffee  */
+.coffee-section {
     margin: auto;
     width: 80%;
     margin-top: 6%;
     margin-bottom: 15%;
-    z-index: 1;
 }
-.latest-section h4{
+.coffee-section h4{
     color: rgb(168,175,179);
     font-size: 12px;
 }
-.latest-section .latest-title{
+.coffee-section .coffee-title{
     font-size: 30px;
     position: relative;
-
 }
-.latest-section .latest-title::after {
+.coffee-section .coffee-title::after {
     position: absolute;
     content: "";
     bottom: 0;
-    left: 8%;
-    width: 7rem;
+    left: 5%;
+    width: 10.5rem;
     height: 2px;
     background-color: var(--hover);
 }
-.latest-container{
+.coffee-box{
     display: flex;
-    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 4%;
+    
 }
-.latest-container .latest-box{
-    flex: 1 1 24rem;
-    height: 70%;
-    width: 50%;
+.coffee-container{
+    flex: 1 1 20rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 1px solid rgba(168, 175, 179, 0.212);
 }
-.latest-container .latest-box img{
+.coffee-container .coffee{
+    flex: 1 1 2rem;
+    margin: 5% 10% 5% 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.coffee-container .coffee .pic{
+    height: 70px;
+    width: 70px;
+}
+.coffee-container .coffee img{
     height: 100%;
     width: 100%;
-    margin-top: 10%;
+    object-fit: contain;
 }
-.latest-container .latest-box .latest-content p{
+.coffee-container .coffee .content{
+    width: max-content;
+    text-align: left;
+    align-items: center;
+    margin: auto;
+    margin-left: 5%;
+}
+.coffee-container .coffee p{
     color: rgb(128,142,156);
-    font-size: 15px;
-    padding: 1rem 1rem 1rem 0rem;
-    display: inline-block;
+    font-size: 14px;
 }
-.latest-container .latest-box .latest-content h3{
-    font-size: 18px;
-}
-.latest-container .latest-box a{
-        color: #000;
-        font-size: 20px;
-        text-decoration: none;
-}
-.latest-container .latest-box a i{
-        font-size: 17px;
-}
-.latest-container .latest-box a:hover{
-    color: var(--hover);
+.coffee-container .coffee h3{
+    font-size: 14px;
 }
 
-/* end latest */
+/* end coffee  */
 /* start subscribe */
 .subscribe{
     display: flex;
@@ -490,8 +377,7 @@ header .btn:hover{
     top: 0;
     background:rgb(0,35,71);
     padding-top: 3%;
-    margin-top: 3%;
-    
+    margin-top: 3%
 }
 
 .footer .box-container {
@@ -638,6 +524,9 @@ header .btn:hover{
         width: 150px;
         margin:4rem 25rem 0rem 0rem;
     }
+    .home{
+        height: 250px;
+    }
     .slide-container{
         height: max-content;
     }
@@ -661,11 +550,11 @@ header .btn:hover{
         margin-bottom: 0.1rem;
     }
     .trending-section .trending-title::after {
-        left: 40%;
+        left: 48%;
         width: 15rem;
     }
     .swiper-section .swiper-title::after {
-        left: 23%;
+        left: 26%;
         width: 13rem;
     }
     .swipe .swiper-left{
@@ -677,14 +566,14 @@ header .btn:hover{
     }
 
     .latest-section .latest-title::after {
-        left: 30%;
+        left: 35%;
         width: 10rem;
     }
     .subscribe .subscribe-container{
         height: 250px;
     }
     .latest-section{
-        margin-bottom: 45%;
+        margin: 6% 15% 45% 15%;
     }
     .subscribe .subscribe-container input{
         padding: 1rem 5rem 1rem 2rem;
@@ -705,6 +594,32 @@ header .btn:hover{
         font-size: 1rem;
     }
 
+
+
+    .home{
+        height: 250px;
+    }
+    .shop-category {
+        width: 92%;
+    }
+    .left-section{
+        width: 40%;
+        font-size: 74%;
+    }
+    .right-section .sort .default ,.show,.sort-searchBar {
+        margin: 1rem;
+    }
+    .right-section .sort{
+        flex-direction:  column;
+        align-items: flex-start;
+    }
+    .coffee-section {
+        margin-bottom: 45%;
+    }
+    .coffee-section .coffee-title::after {
+        left: 19%;
+        width: 15rem;
+    }
 
 }
 @media (max-width: 450px) {
