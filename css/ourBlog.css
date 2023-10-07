@@ -130,6 +130,7 @@ header .btn:hover {
     color: rgb(128, 142, 156);
     border: .1rem solid rgba(0, 0, 0, .3);
 }
+
 /* start home */
 
 .home {
@@ -283,13 +284,11 @@ h5 span {
     cursor: pointer;
     border: 1px solid #a5a2a2;
     border-radius: 1px;
-<<<<<<< HEAD
-    -webkit-border-radius: ;
+    <<<<<<< HEAD -webkit-border-radius: ;
     -moz-border-radius: ;
     -ms-border-radius: ;
     -o-border-radius: ;
-=======
->>>>>>> 2fd9058a037db92295b2f69340d48ef0fdba86ac
+    =======>>>>>>>2fd9058a037db92295b2f69340d48ef0fdba86ac
 }
 
 
@@ -427,7 +426,6 @@ input {
 
 #clear {
     position: absolute;
-    top: 0;
     right: 0px;
     z-index: 2;
     border: none;
