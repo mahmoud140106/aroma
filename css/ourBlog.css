@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap');
 
 :root {
-    --hover:rgb(56,74,235);
+    --hover: rgb(56, 74, 235);
 }
+
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -22,6 +23,7 @@ html {
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -33,9 +35,9 @@ body {
     font-size: 16px;
 }
 
-.btn{
+.btn {
     background-color: var(--hover);
-    border: 1px solid rgb(56,74,235);
+    border: 1px solid rgb(56, 74, 235);
     font-weight: bold;
     color: #fff;
     cursor: pointer;
@@ -46,7 +48,8 @@ body {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #fff;
     color: var(--hover);
 }
@@ -62,17 +65,20 @@ header {
     justify-content: space-evenly;
     width: 100%;
     height: 60px;
-    padding: 10px 18px 10px 10px ;
+    padding: 10px 18px 10px 10px;
     /* background-color: hotpink; */
     z-index: 1000;
 }
-header .logo{
+
+header .logo {
     width: 10rem;
 }
+
 header .logo img {
     width: 100%;
     height: 100%;
 }
+
 header .navbar a {
     color: #000;
     font-size: 18px;
@@ -80,9 +86,11 @@ header .navbar a {
     text-decoration: none;
     position: relative;
 }
-header .navbar a:hover{
+
+header .navbar a:hover {
     color: var(--hover);
 }
+
 header .icons i {
     font-size: 18px;
     color: #000;
@@ -93,13 +101,15 @@ header .icons i {
 header .icons i:hover {
     color: var(--hover);
 }
-header .btn{
+
+header .btn {
     background-color: #fff;
     color: #000;
     margin: 0.5rem;
     border: 1px solid rgba(0, 0, 0, .2);
 }
-header .btn:hover{
+
+header .btn:hover {
     background-color: var(--hover);
     color: #fff;
 }
@@ -112,13 +122,13 @@ header .btn:hover{
     cursor: pointer;
     display: none;
     color: var(--hover);
-    border:.1rem solid var(--hover);
+    border: .1rem solid var(--hover);
 
 }
 
 #menu-bar:hover {
-    color: rgb(128,142,156);
-    border:.1rem solid rgba(0, 0, 0, .3);
+    color: rgb(128, 142, 156);
+    border: .1rem solid rgba(0, 0, 0, .3);
 }
 
 /* start home */
@@ -193,13 +203,11 @@ header .btn:hover{
     margin: 10px;
 }
 
-.photoCard .text::before {
-    position: absolute;
-    content: "";
-    width: 120px;
-    right: 30%;
-    color: #fff;
-    border: 1px solid #fff;
+.photoCard .text h2 {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2px 5px;
+    border-bottom: 3px solid #fff;
 }
 
 /* photosection end */
@@ -225,7 +233,8 @@ header .btn:hover{
 .container div .middle {
     flex: 1 1 50rem;
 }
-.left div{
+
+.left div {
     margin-left: 35px;
 }
 
@@ -234,21 +243,25 @@ header .btn:hover{
     background-color: #eae7e7;
     flex: 1 1 25rem;
 }
+
 .textLeft {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-around;
 }
+
 .textLeft div {
     display: flex;
     flex-flow: column wrap;
     margin-bottom: 250px;
 }
-.textLeft div > *{
+
+.textLeft div>* {
     margin: 10px;
 }
-h5 span{
+
+h5 span {
     color: var(--hover);
 }
 
@@ -257,10 +270,12 @@ h5 span{
     flex-flow: column wrap;
     justify-content: space-between;
 }
-.imageCard > *{
+
+.imageCard>* {
     margin: 20px;
 }
-.imageCard button{
+
+.imageCard button {
     width: 30%;
     height: fit-content;
     padding: 5px;
@@ -269,10 +284,10 @@ h5 span{
     cursor: pointer;
     border: 1px solid #a5a2a2;
     border-radius: 1px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
 }
 
 
@@ -280,39 +295,41 @@ h5 span{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 3px;
 }
 
 .wrapper {
     width: 100%;
     max-width: 31.25rem;
     margin: 6rem auto;
-  }
-  
-  .label {
+}
+
+.label {
     font-size: .625rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: +1.3px;
     margin-bottom: 1rem;
-  }
+}
 
-  .afterSearch{
+.afterSearch {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  }
-  .afterSearch p{
+}
+
+.afterSearch p {
     text-align: center;
-  }
-  
-  .searchBar {
+}
+
+.searchBar {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     align-items: center;
-  }
-  
-  #searchQueryInput {
+}
+
+#searchQueryInput {
     color: #fff;
     width: 100%;
     height: 2.8rem;
@@ -321,9 +338,9 @@ h5 span{
     border-radius: 1.625rem;
     padding: 0 3.5rem 0 1.5rem;
     font-size: 1rem;
-  }
-  
-  #searchQuerySubmit {
+}
+
+#searchQuerySubmit {
     color: #fff;
     width: 3.5rem;
     height: 2.8rem;
@@ -331,20 +348,21 @@ h5 span{
     background: none;
     border: none;
     outline: none;
-  }
-  
-  #searchQuerySubmit:hover {
-    cursor: pointer;
-  }
+}
 
-  .socialIcons {
+#searchQuerySubmit:hover {
+    cursor: pointer;
+}
+
+.socialIcons {
     display: flex;
     justify-content: center;
-  }
-  .socialIcons i {
+}
+
+.socialIcons i {
     margin: 20px;
-  }
-  
+}
+
 .Popular h1 {
     height: fit-content;
     width: 90%;
@@ -355,7 +373,7 @@ h5 span{
     margin: 0 auto;
 }
 
-.Popular div{
+.Popular div {
     margin: 20px auto;
     width: 90%;
     display: flex;
@@ -363,14 +381,14 @@ h5 span{
     text-align: center;
 }
 
-.Popular div div{
+.Popular div div {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     text-align: start;
 }
 
-.line::before{
+.line::before {
     content: "";
     width: 90%;
     height: 0;
@@ -378,32 +396,32 @@ h5 span{
     margin: 0 auto;
 }
 
-.add img{
+.add img {
     height: fit-content;
     margin: 0 auto;
 }
 
-.other div{
+.other div {
     margin: 2px auto;
 }
 
-.Popular p{
+.Popular p {
     width: 80%;
     text-align: center;
     margin: 5px auto;
 }
 
-.buttonIn { 
-    position: relative; 
+.buttonIn {
+    position: relative;
     margin: 0 auto;
-} 
+}
 
-input { 
-    margin: 0px; 
-    padding: 0px; 
-    width: 100%; 
-    height: 40px; 
-} 
+input {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 40px;
+}
 
 #clear {
     position: absolute;
@@ -416,15 +434,17 @@ input {
     cursor: pointer;
     color: white;
     background-color: var(--hover);
-} 
-#small{
+}
+
+#small {
     font-size: 80%;
 }
 
-.interest  div{
+.interest div {
     flex-wrap: wrap;
 }
-.other .line::before{
+
+.other .line::before {
     border-style: dashed;
 }
 
@@ -434,9 +454,10 @@ input {
     border: 1px solid #a5a2a2;
     background-color: #eae7e7;
     margin: 10px 5px;
-    padding:2px 5px;
+    padding: 2px 5px;
 
 }
+
 /* end main content */
 
 /* start image below */
@@ -527,60 +548,79 @@ input {
 /*end footer */
 
 /* media query */
- @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
+
     .container div {
         flex-wrap: wrap;
     }
-    
-    .Popular div div{
+
+    .Popular div div {
         flex-direction: row;
         margin: 0;
     }
-    .Popular div h5{
+
+    .Popular div h5 {
         margin-left: 10px;
     }
-    .right div{
+
+    .right div {
         margin: 10px auto;
     }
 }
-@media (max-width: 1050px){
+
+@media (max-width: 1050px) {
     .container div {
         width: 90%;
     }
-    
+
     .left {
         flex: 0 1 15rem;
     }
-    .left div{
+
+    .left div {
         margin-left: 0;
     }
-    
+
     .middle {
         flex: 1 0 40rem;
     }
 }
+
 @media (max-width: 991px) {
     html {
         font-size: 50%;
     }
-}
-@media (max-width: 880px){
-    .imageCard{
-        margin-bottom:100px ;
+
+
+    .allPhoto div {
+        flex-wrap: wrap;
     }
-    .imageCard > *{
+}
+
+@media (max-width: 880px) {
+    .imageCard {
+        margin-bottom: 100px;
+    }
+
+    .home {
+        height: 300px;
+    }
+
+    .imageCard>* {
         margin: 10px;
         font-size: 80%;
 
     }
-    .imageCard img{
+
+    .imageCard img {
         width: 80%;
 
     }
-    .textLeft div{
+
+    .textLeft div {
         font-size: 80%;
         margin-bottom: 210px;
     }
@@ -637,24 +677,36 @@ input {
         margin-left: 12%;
     }
 }
-@media (max-width: 650px){
-.left{
-    visibility:hidden;
-    height: 10px;
-    
-}
-.imageCard > *{
-    margin: 10px;
-    font-size: 80%;
 
-}
-.imageCard img{
-    width: 90%;
+@media (max-width: 650px) {
+    .left {
+        visibility: hidden;
+        height: 10px;
 
+    }
+
+    .imageCard>* {
+        margin: 10px;
+        font-size: 80%;
+
+    }
+
+    .imageCard img {
+        width: 90%;
+
+    }
 }
-}
+
 @media (max-width: 450px) {
     html {
         font-size: 45%;
+    }
+
+    .home {
+        height: 200px;
+    }
+
+    .add img {
+        width: 80%;
     }
 }
