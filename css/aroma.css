@@ -661,7 +661,7 @@ header .btn:hover{
         margin-bottom: 0.1rem;
     }
     .trending-section .trending-title::after {
-        left: 40%;
+        left: 42.5%;
         width: 15rem;
     }
     .swiper-section .swiper-title::after {
