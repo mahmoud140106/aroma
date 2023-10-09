@@ -100,6 +100,27 @@ header .icons i {
 header .icons i:hover {
     color: var(--hover);
 }
+header .icons i:last-child{
+    margin-bottom: 60%;
+}
+
+header .icons .notify {
+    background-color: var(--hover);
+    color: #fff;
+    padding: 1% 12% 1% 12%;
+    font-size: 10px;
+    text-align: center;
+    width: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    top: 8px;
+    right: -24px;
+}
+
 
 header .btn {
     background-color: #fff;
