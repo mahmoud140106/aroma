@@ -209,6 +209,8 @@ header .btn:hover{
 .one .btn {
     border: 1px solid #fff;
     padding: 0.8rem 4rem 0.8rem 4rem;
+    text-decoration: none;
+    color: #fff;
 }
 
 .one .btn:hover {
@@ -225,6 +227,10 @@ header .btn:hover{
 .two h2 {
     text-align: center;
     text-transform: uppercase;
+}
+.two .forgot {
+    color: rgb(128, 142, 156);
+    text-align: center;
 }
 
 .input {
