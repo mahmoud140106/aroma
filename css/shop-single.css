@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap');
+
+:root {
+    --hover:rgb(56,74,235);
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background: #fff;
+    color: var(--hover);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    line-height: 1.42;
+    font-size: 16px;
+}
+
+.btn{
+    background-color: var(--hover);
+    border: 1px solid rgb(56,74,235);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 1rem 3rem 1rem 3rem;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: var(--hover);
+}
+
+/* start header */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60px;
+    padding: 10px 18px 10px 10px ;
+    /* background-color: hotpink; */
+    z-index: 1000;
+}
+header .logo{
+    width: 10rem;
+}
+header .logo img {
+    width: 100%;
+    height: 100%;
+}
+header .navbar a {
+    color: #000;
+    font-size: 18px;
+    margin: 15px;
+    text-decoration: none;
+    position: relative;
+}
+header .navbar a:hover{
+    color: var(--hover);
+}
+header .icons i {
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    margin: 0.8rem;
+}
+
+header .icons i:hover {
+    color: var(--hover);
+}
+header .btn{
+    background-color: #fff;
+    color: #000;
+    margin: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+header .btn:hover{
+    background-color: var(--hover);
+    color: #fff;
+}
+
+#menu-bar {
+    border-radius: .5rem;
+    font-size: 3rem;
+    margin: 0.5rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+    color: var(--hover);
+    border:.1rem solid var(--hover);
+
+}
+
+#menu-bar:hover {
+    color: rgb(128,142,156);
+    border:.1rem solid rgba(0, 0, 0, .3);
+}
+/* start home */
+
+.home {
+    background-color: rgb(241,246,247);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home div {
+    align-items: center;
+    text-align: center;
+}
+
+.home div h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.home div p {
+    color: rgb(128,142,156);
+}
+
+/* end home */
+/* start item */
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.item .left{
+    width: 100%;
+    height: 100%;
+}
+.item .left img{
+    width: 50rem;
+    height: 50rem;
+}
+.item .right{
+    margin-left: 10%;
+}
+.item .right>* {
+    margin: 1rem;
+}
+.item .right h3{
+    color: var(--hover);
+}
+.item .right span{
+    color: rgb(128,142,156);
+    cursor: pointer;
+}
+.item .right .paragraph{
+    padding: 2rem 0rem 2rem 0rem;
+    border-top: 1px dotted rgba(128, 142, 156, 0.418);
+    border-bottom: 1px dotted rgba(128, 142, 156, 0.418);
+    line-height: 3rem;
+}
+.item .right .range{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+}
+.item .right .range input{
+    width: 6rem;
+    margin-right: 1rem;
+    border: 1px solid rgba(128, 142, 156, 0.418);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.item .right .range .arrow{
+    margin-right: 5rem;
+    font-size: 12px;
+    cursor: pointer;
+}
+.item .right .icon{
+    display: inline-block;
+    background-color: rgb(241,246,247);
+    padding: 2% 3% 2% 3%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+}
+.item .right .icon:hover{
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(56, 74, 235, 0.271);
+}
+
+/* end item */
+/* start review */
+.review{
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(241,246,247);
+}
+.review .review-header{
+    background-color: rgb(241,246,247);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.review .review-header>*{
+    margin-right: 1rem;
+}
+.review .review-header .hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgb(241,246,247);
+}
+.review .review-header .hover:hover{
+    background-color: var(--hover);
+    color: #fff;
+}
+.review .review-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.review .review-container .show{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 3%;
+}
+.review .review-container .show .overall-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.review .review-container .show .overall-box .overall{
+    background-color: rgb(241,246,247);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 6rem 2rem 6rem;
+    margin-bottom: 8%;
+}
+.review .review-container .show .overall-box .overall h2{
+    color: var(--hover);
+    font-size: 40px;
+}
+.review .review-container .show .based>*{
+    margin-bottom: 2%;
+}
+.review .review-container .show .based p{
+    color: rgb(128,142,156);
+}
+.review .review-container .show .content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.review .review-container .show .content-container p{
+    color: rgb(128,142,156);
+    line-height: 3rem;
+}
+.review .review-container .show .content-container .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+.review .review-container .show .content-container .content .person-box{
+    margin: 1rem;
+}
+.review .review-container i{
+    color: #fbd600;    
+    cursor: pointer;
+    padding-right: 0%;
+}
+.review .review-container .add{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1% 1% 2% 4%;
+    padding: 1%;
+}
+.review .review-container .add h3,p{
+    margin-bottom: 1rem;
+}
+
+.review .review-container .add input,textarea{
+    height: 46px;
+    border: 1px solid #EEEE ;
+    color: #999999;
+    display: block;
+    width: 50rem;
+    line-height: 1.5;
+    margin: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.review .review-container .add textarea{
+    height: 10rem;
+    resize: none;
+}
+.review .review-container .add .btn{
+    float: right;
+    margin: 4%;
+    margin-right: 0; 
+}
+
+
+/* end review */
+
+/* start coffee  */
+.coffee-section {
+    margin: auto;
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.coffee-section h4{
+    color: rgb(168,175,179);
+    font-size: 12px;
+}
+.coffee-section .coffee-title{
+    font-size: 30px;
+    position: relative;
+}
+.coffee-section .coffee-title::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 5%;
+    width: 10.5rem;
+    height: 2px;
+    background-color: var(--hover);
+}
+.coffee-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 4%;
+    
+}
+.coffee-container{
+    flex: 1 1 20rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 1px solid rgba(168, 175, 179, 0.212);
+}
+.coffee-container .coffee{
+    flex: 1 1 2rem;
+    margin: 5% 10% 5% 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.coffee-container .coffee .pic{
+    height: 70px;
+    width: 70px;
+}
+.coffee-container .coffee img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.coffee-container .coffee .content{
+    width: max-content;
+    text-align: left;
+    align-items: center;
+    margin: auto;
+    margin-left: 5%;
+}
+.coffee-container .coffee p{
+    color: rgb(128,142,156);
+    font-size: 14px;
+}
+.coffee-container .coffee h3{
+    font-size: 14px;
+}
+.coffee-container .coffee h3:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
+
+/* end coffee  */
+
+/* start footer */
+.footer {
+    position: relative;
+    top: 0;
+    background:rgb(0,35,71);
+    padding-top: 3%;
+    margin-top: 3%
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0% 10% 0% 10%;
+}
+
+.footer .box-container .box {
+    padding: 5rem ;
+    flex: 1 1 25rem;
+}
+.footer .box-container .box .pic-container{
+    width: 150px;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: rgb(128,142,156);
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    width: max-content;
+    color: rgb(128,142,156);
+    text-decoration: none;
+}
+.footer .box-container .box .con-container h4{
+    color: #fff;
+}
+
+.footer .box-container .box .con-container p{
+    margin-left: 22%;
+}
+
+
+.footer .box-container .box i {
+    color: #fff;
+    background-color: rgb(56,74,235);
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 0.5rem;
+    font-size: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.footer .box-container .box a:hover {
+    color: #ffffff;
+}
+
+
+.footer .credit {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgb(5,39,75);
+}
+
+.footer .credit span {
+    color: blue;
+}
+/* end footer */
+
+/* media query */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 768px) {
+    #menu-bar {
+        position: absolute;
+        right: 1rem;
+        display: initial;
+    }
+    header{
+        width: auto;
+        
+    }
+    .btn{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-size: 10px;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(56, 74, 235, 0.345);
+        backdrop-filter: blur(2px);
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        width: 100%;
+        height: 100vh;
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display: block;
+        width: 40%;
+    }
+    header .navbar a:hover{
+        color: #fff;
+    }
+    .home .right .content{
+        width: 40%;
+    }
+    .home .right .content h4{
+        font-size: 20px;
+    }
+    .home .right .content h3{
+        font-size: 20px;
+    }
+    .home .right .content p{
+        font-size: 10px;
+        margin: 2rem 0rem 4rem 0rem
+    }
+    .home .pic{
+        height:340px;
+        width: 150px;
+        margin:4rem 25rem 0rem 0rem;
+    }
+    .home{
+        height: 250px;
+    }
+    .slide-container{
+        height: max-content;
+    }
+    .sale-container .sale-content{
+        width: max-content;
+        left: 5%;
+        top: 0%;    
+    }
+    .sale-container .sale-content h3{
+        font-size: 15px;
+    }
+    .sale-container .sale-content h4{
+        font-size: 10px;
+        margin-top: 0.1rem;
+    }
+    .latest-container{
+        flex-wrap: wrap;
+    }
+    .sale-container .sale-content p{
+        font-size: 10px;
+        margin-bottom: 0.1rem;
+    }
+    .trending-section .trending-title::after {
+        left: 48%;
+        width: 15rem;
+    }
+    .swiper-section .swiper-title::after {
+        left: 26%;
+        width: 13rem;
+    }
+    .swipe .swiper-left{
+        left: 2%;
+    
+    }
+    .swipe .swiper-right{
+        right: 2%;
+    }
+
+    .latest-section .latest-title::after {
+        left: 35%;
+        width: 10rem;
+    }
+    .subscribe .subscribe-container{
+        height: 250px;
+    }
+    .latest-section{
+        margin: 6% 15% 45% 15%;
+    }
+    .subscribe .subscribe-container input{
+        padding: 1rem 5rem 1rem 2rem;
+    }
+    .footer {
+        margin-top: 24%
+    }
+    .footer .box-container {
+        padding: 0% 4% 0% 4%;
+    }
+    .footer .box-container .box h3 {
+        font-size: 2rem;
+    }
+    .footer .box-container .box .con-container p{
+        margin-left: 12%;
+    }
+    .footer .credit {
+        font-size: 1rem;
+    }
+
+
+
+    .home{
+        height: 250px;
+    }
+    .shop-category {
+        width: 92%;
+    }
+    .left-section{
+        width: 40%;
+        font-size: 74%;
+    }
+    .right-section .sort .default ,.show,.sort-searchBar {
+        margin: 1rem;
+    }
+    .right-section .sort{
+        flex-direction:  column;
+        align-items: flex-start;
+    }
+    .coffee-section {
+        margin-bottom: 45%;
+    }
+    .coffee-section .coffee-title::after {
+        left: 23%;
+        width: 15rem;
+    }
+
+
+    .item{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .item .right{
+        margin-left: 0%;
+    }
+    .review{
+        width: 90%;
+    }
+    .review .review-container{
+        flex-wrap: wrap;
+    }
+    .review .review-container .show .overall-box .overall{
+        padding: 1rem 3rem 1rem 3rem;
+    }
+    .review .review-container .show .based{
+        margin-top: 0rem;
+        margin-bottom: 6%;
+    }
+    .review .review-container .add input,textarea{
+        width: 40rem;
+    }
+    .review .review-container .add{
+        margin: 0%;
+        margin-right: 8%;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 45%;
+    }
+
+}
