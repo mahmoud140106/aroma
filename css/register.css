@@ -145,7 +145,7 @@ header .btn:hover{
 /* start home */
 
 .home {
-    background-color:rgb(241,246,247);
+    background-color: rgb(241, 246, 247);
     height: 400px;
     display: flex;
     align-items: center;
@@ -169,307 +169,109 @@ header .btn:hover{
 
 /* end home */
 
-/* photosection start */
+/* start main */
 
-.allPhoto {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin: 30px 0 60px 0;
-}
+/* .content {
+    margin: 60px 0;
+} */
 
-.allPhoto div {
-    align-self: center;
-    justify-content: center;
-    display: flex;
-    margin: 10px;
-    width: 90%;
-}
-
-.photoCard {
-    display: flex;
-    flex-flow: column wrap;
-    position: relative;
-    flex: 1 1 35rem;
-}
-
-.photoCard .img img {
-    width: 100%;
-    height: 100%;
-}
-
-.photoCard .text {
-    width: 80%;
-    height: 80%;
-    color: #fff;
-    margin: 30px;
-    background-color: rgb(0,0,0,0.5);
-    display: flex;
-    flex-flow: column;
-    position: absolute;
-    text-align: center;
-}
-.photoCard .text:hover{
-    background-color:rgba(56, 74, 235, 0.471);
-}
-
-.photoCard .text p {
-    margin: 10px;
-}
-
-.photoCard .text h2 {
-    width: 50%;
-    margin: 0 auto;
-    padding: 2px 5px;
-    border-bottom: 3px solid #fff;
-}
-
-/* photosection end */
-
-/* start main content */
-
-.container {
-    padding: 20px;
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    margin: 6rem 0rem 6rem 0rem;
 }
 
 .container div {
-    width: 85%;
+    padding: 40px;
     display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
-.container div .left {
-    flex: 1 1 15rem;
-}
-
-.container div .middle {
-    flex: 1 1 50rem;
-}
-
-.left div {
-    margin-left: 35px;
-}
-
-.container div .right {
-    border: 1px solid rgba(128, 142, 156, 0.137);
-    background-color: rgb(250,250,255);
-    flex: 1 1 25rem;
-}
-
-.textLeft {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.textLeft div {
-    display: flex;
-    flex-flow: column wrap;
-    margin-bottom: 250px;
-}
-
-.textLeft div>* {
+.container div>* {
     margin: 10px;
 }
 
-h5 span {
-    color: var(--hover);
-}
-
-.middle div {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-}
-
-.imageCard>* {
-    margin: 20px;
-}
-
-.imageCard button {
-    width: 30%;
-    height: fit-content;
-    padding: 5px;
-    background-color: rgb(249,249,255);
-    color: #000;
-    cursor: pointer;
-    border: 1px solid rgba(128, 142, 156, 0.137);
-    border-radius: 1px;
-}
-
-.right div {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 3px;
-}
-
-.wrapper {
-    width: 100%;
-    max-width: 31.25rem;
-    margin: 6rem auto;
-}
-
-.label {
-    font-size: .625rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: +1.3px;
-    margin-bottom: 1rem;
-}
-
-.afterSearch {
-    display: flex;
-    flex-direction: column;
+.one {
+    text-align: center;
+    background-color: var(--hover);
+    color: #fff;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
-.afterSearch p {
+.one .btn {
+    border: 1px solid #fff;
+    padding: 0.8rem 4rem 0.8rem 4rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.one .btn:hover {
+    border-color: var(--hover);
+    color: var(--hover);
+    background-color: #fff;
+}
+
+.two {
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(56, 74, 235, 0.271);
+}
+
+.two h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.two .forgot {
+    color: rgb(128, 142, 156);
     text-align: center;
 }
 
-.searchBar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#searchQueryInput {
-    color: #fff;
-    width: 100%;
-    height: 2.8rem;
-    background: var(--hover);
-    border: none;
-    border-radius: 1.625rem;
-    padding: 0 3.5rem 0 1.5rem;
-    font-size: 1rem;
-}
-
-#searchQuerySubmit {
-    color: #fff;
-    width: 3.5rem;
-    height: 2.8rem;
-    margin-left: -3.5rem;
-    background: none;
+.input {
     border: none;
     outline: none;
+    padding: 15px 5px 15px 5px;
+    border-bottom: 1px solid rgb(128, 142, 156);
 }
 
-#searchQuerySubmit:hover {
-    cursor: pointer;
-}
-
-.socialIcons {
-    display: flex;
-    justify-content: center;
-}
-
-.socialIcons i {
-    margin: 20px;
-}
-
-.Popular h1 {
-    height: fit-content;
-    width: 90%;
-    background-color: var(--hover);
-    color: #fff;
-    text-align: center;
-    padding: 7px;
-    margin: 0 auto;
-}
-
-.Popular div {
-    margin: 20px auto;
-    width: 90%;
-    display: flex;
-    flex-flow: row nowrap;
-    text-align: center;
-}
-
-.Popular div div {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    text-align: start;
-}
-
-.line::before {
-    content: "";
-    width: 90%;
-    height: 0;
-    border: 1px solid rgb(128, 142, 156);
-    margin: 0 auto;
-}
-
-.add img {
-    height: fit-content;
-    margin: 0 auto;
-}
-
-.other div {
-    margin: 2px auto;
-}
-
-.Popular p {
-    width: 80%;
-    text-align: center;
-    margin: 5px auto;
-}
-
-.buttonIn {
-    position: relative;
-    margin: 0 auto;
-}
-
-input {
-    margin: 0px;
-    padding: 0px;
+#space {
+    flex-direction: row;
     width: 100%;
-    height: 40px;
+    padding: 0px;
 }
 
-#clear {
-    position: absolute;
-    right: 0px;
-    z-index: 2;
-    border: none;
-    width: 30%;
-    height: 40px;
-    cursor: pointer;
-    color: white;
-    background-color: var(--hover);
+#space input {
+    margin: 0;
 }
 
-#small {
-    font-size: 80%;
+label {
+    color: rgb(128, 142, 156);
+    width: 100%;
 }
 
-.interest div {
-    flex-wrap: wrap;
+.register {
+    border: 1px solid transparent;
+    background-color: #c5322d;
+    color: #fff;
+    width: 95%;    
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
 }
 
-.other .line::before {
-    border-style: dashed;
-}
-
-.interest div p {
-    width: fit-content;
-    height: fit-content;
-    border: 1px solid rgba(128, 142, 156, 0.137);
+.register:hover {
     background-color: #fff;
-    margin: 10px 5px;
-    padding: 2px 5px;
-
+    color: #c5322d;
+    border: 1px solid #c5322d;
 }
-
-/* end main content */
-
-/* start image below */
-
 
 /* start footer */
 .footer {
@@ -555,83 +357,28 @@ input {
 
 /*end footer */
 
-/* media query */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 
-    .container div {
-        flex-wrap: wrap;
-    }
-
-    .Popular div div {
-        flex-direction: row;
-        margin: 0;
-    }
-
-    .Popular div h5 {
-        margin-left: 10px;
-    }
-
-    .right div {
-        margin: 10px auto;
-    }
 }
 
-@media (max-width: 1050px) {
-    .container div {
-        width: 90%;
-    }
 
-    .left {
-        flex: 0 1 15rem;
-    }
-
-    .left div {
-        margin-left: 0;
-    }
-
-    .middle {
-        flex: 1 0 40rem;
-    }
-}
 
 @media (max-width: 991px) {
     html {
         font-size: 50%;
     }
 
-
-    .allPhoto div {
-        flex-wrap: wrap;
-    }
 }
 
 @media (max-width: 880px) {
-    .imageCard {
-        margin-bottom: 100px;
-    }
 
     .home {
         height: 300px;
     }
 
-    .imageCard>* {
-        margin: 10px;
-        font-size: 80%;
-
-    }
-
-    .imageCard img {
-        width: 80%;
-
-    }
-
-    .textLeft div {
-        font-size: 80%;
-        margin-bottom: 210px;
-    }
 
 }
 
@@ -684,29 +431,20 @@ input {
     .footer .box-container .box .con-container p {
         margin-left: 12%;
     }
+
     .footer .credit {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 650px) {
-    .left {
-        visibility: hidden;
-        height: 10px;
-
+    .container {
+        flex-wrap: wrap;
     }
 
-    .imageCard>* {
-        margin: 10px;
-        font-size: 80%;
-
-    }
-
-    .imageCard img {
-        width: 90%;
-
+    .container div {
+        width: 100%;
     }
 }
+
 
 @media (max-width: 450px) {
     html {
@@ -717,7 +455,6 @@ input {
         height: 200px;
     }
 
-    .add img {
-        width: 80%;
-    }
+
+
 }

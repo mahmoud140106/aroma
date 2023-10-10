@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aroma</title>
+        <!-- font link -->
+        <script src="https://kit.fontawesome.com/a03b205d46.js" crossorigin="anonymous"></script>
+        <!-- css file link -->
+        <link rel="stylesheet" href="./css/cart.css">
+        <!--website icon -->
+        <link rel="icon" type="image/png" href="./img/Fevicon.png">
+    </head>
+
+    <body>
+        <!-- start header -->
+        <header>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <a href="index.html" class="logo"><img src="./img/logo.png" alt="" /></a>
+            <nav class="navbar">
+                <a href="index.html"> home </a>
+                <a href="shop.html"> shop </a>
+                <a href="ourBlog.html"> blog </a>
+                <a href="register.html"> pages </a>
+                <a href="contact.html"> contact </a>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i></a>
+            </div>
+            <button class="btn">buy now</button>
+        </header>
+        <!-- end header -->
+        <!-- home start-->
+        <section class="home">
+            <div>
+                <h1>shopping cart</h1>
+                <p>home-shopping cart</p>
+            </div>
+        </section>
+        <!-- home end-->
+
+        <!-- start table -->
+        <section class="table-container">
+            <table>
+                <tr>
+                    <td>product</td>
+                    <td>price </td>
+                    <td>quantity</td>
+                    <td>total</td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img src="./img/product/product7.png" alt="">
+                        <p>minimalistic shop for multipurpose use</p>
+                    </td>
+                    <td>$360.00</td>
+                    <td><input type="number" name="quantity" min="1" max="10" placeholder="1"></td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img src="./img/home/hero-slide1.png" alt="">
+                        <p>minimalistic shop for multipurpose use</p>
+                    </td>
+                    <td>$360.00</td>
+                    <td><input type="number" name="quantity" min="1" max="10"></td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img src="./img/product/product6.png" alt="">
+                        <p>minimalistic shop for multipurpose use</p>
+                    </td>
+                    <td>$360.00</td>
+                    <td><input type="number" name="quantity" min="1" max="10"></td>
+                    <td>$720.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn hover">update cart</button>
+                    </td>
+                    <td colspan="3" class="update">
+                        <input type="text" name="coupon" id="coupon" placeholder="coupon code">
+                        <button class="btn">apply</button>
+                        <button class="btn hover">have a coupon?</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    </td>
+                    <td>
+                        sub total
+                    </td>
+                    <td>$2160.00</td>
+                </tr>
+                <tr class="shipping">
+                    <td colspan="2">
+                    </td>
+
+                    <td colspan="2" class="shipping-container">
+
+                        <div class="box">
+                            <!-- <div class="sh-title"><h5>Shipping</h5></div> -->
+                            <div>
+                                <div class="sh-title">
+                                    <h5>Shipping</h5>
+                                </div>
+                                <div class="sh-box">
+                                    <label for="1">Flat Rate: $5.00</label>
+                                    <input type="radio" id="1">
+                                </div>
+                                <div class="sh-box">
+                                    <label for="2">Free Shipping</label>
+                                    <input type="radio" id="2">
+                                </div>
+                                <div class="sh-box">
+                                    <label for="3">Flat Rate: $10.00</label>
+                                    <input type="radio" id="3">
+                                </div>
+                                <div class="sh-box">
+                                    <label for="4">Local Delivery: $2.00</label>
+                                    <input type="radio" id="4">
+                                </div>
+                            </div>
+                            <h6>Calculate Shipping <i class="fa fa-caret-down"></i></h6>
+                            <div class="input-box">
+                                <select class="shipping-select">
+                                    <option value="1">Bangladesh</option>
+                                    <option value="2">egypt</option>
+                                    <option value="3">italy</option>
+                                </select>
+                                <select class="shipping-select">
+                                    <option value="1">Select a State</option>
+                                    <option value="2">Select a State</option>
+                                    <option value="4">Select a State</option>
+                                </select>
+                                <input type="text" placeholder="Postcode/Zipcode" class="shipping-select">
+                                <button class="btn hover">Update Details</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="out">
+                    <td colspan="2"></td>
+                    <td colspan="2">
+                        <button class="btn hover">Continue Shopping</button>
+                        <button class="btn">Proceed to checkout</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!-- end table -->
+        <!-- footer start -->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>our mission</h3>
+                    <p>so seed seed green that winged cattle in. gathering thing made fly you're no divided deep moved
+                        us lan gathering thing us land years living.</p>
+                    <p>so seed seed green that winged cattle in. gathering thing made fly you're no divided deep moved
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>qick links</h3>
+
+                    <a href="index.html"> home </a>
+                    <a href="shop.html"> shop </a>
+                    <a href="ourBlog.html"> blog </a>
+                    <a href="#"> product </a>
+                    <a href="#"> brand </a>
+                    <a href="contact.html"> contact </a>
+                </div>
+                <div class="box">
+                    <h3>galllary</h3>
+                    <div class="pic-container">
+                        <img src="./img/r1.jpg" alt="">
+                        <img src="./img/r2.jpg" alt="" class="img2">
+                        <img src="./img/r3.jpg" alt="">
+                        <img src="./img/r5.jpg" alt="">
+                        <img src="./img/r7.jpg" alt="">
+                        <img src="./img/r8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>contact us</h3>
+                    <div class="con-container">
+                        <h4><i class="fa-solid fa-location-arrow"></i>head office</h4>
+                        <p>123,main street, your city</p>
+                        <h4><i class="fa-solid fa-phone-flip"></i>phone number</h4>
+                        <p>+123 456 7890</p>
+                        <p>+123 456 7890</p>
+                        <h4><i class="fa-solid fa-envelope"></i>email</h4>
+                        <p>free@infoexample.com</p>
+                        <p>www.infoexample.com</p>
+                    </div>
+
+                </div>
+            </div>
+            <h1 class="credit">
+                copyright &copy;2023 all rights reserved | this template is made with &#9825; by <span>color lib </span>
+            </h1>
+        </section>
+        <!-- footer end-->
+        <!-- js file link -->
+        <script src="./js/aroma.js"></script>
+    </body>
+
+</html>
