@@ -561,6 +561,9 @@ header .btn:hover{
     .footer {
         margin-top: 10%;
     }
+    header .icons::before {
+        right: 40.3%;
+    }
 
 
 }

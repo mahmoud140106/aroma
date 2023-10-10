@@ -720,6 +720,9 @@ header .btn:hover{
         margin: 0%;
         margin-right: 8%;
     }
+    header .icons::before {
+        right: 40.3%;
+    }
 }
 @media (max-width: 450px) {
     html {

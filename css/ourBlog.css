@@ -646,8 +646,9 @@ input {
         width: auto;
     }
 
-    .btn {
-        padding: 1rem 2rem 1rem 2rem;
+    .btn{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-size: 10px;
     }
 
     header .navbar {
@@ -686,6 +687,9 @@ input {
     }
     .footer .credit {
         font-size: 1rem;
+    }
+    header .icons::before {
+        right: 40.3%;
     }
 }
 

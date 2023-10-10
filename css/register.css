@@ -182,7 +182,7 @@ header .btn:hover{
 }
 
 .container {
-    width: 60%;
+    width: 100%;
     display: flex;
     margin: 6rem 0rem 6rem 0rem;
 }
@@ -393,8 +393,9 @@ label {
         width: auto;
     }
 
-    .btn {
-        padding: 1rem 2rem 1rem 2rem;
+    .btn{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-size: 10px;
     }
 
     header .navbar {
@@ -438,11 +439,16 @@ label {
 
     .container {
         flex-wrap: wrap;
+        width: 95%;
     }
 
     .container div {
         width: 100%;
     }
+    header .icons::before {
+        right: 40.3%;
+    }
+
 }
 
 

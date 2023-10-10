@@ -646,6 +646,9 @@ header .btn:hover{
         left: 19%;
         width: 15rem;
     }
+    header .icons::before {
+        right: 40.3%;
+    }
 
 }
 @media (max-width: 450px) {
